@@ -4,6 +4,7 @@ const cors = require('cors')
 const app = express()
 app.use(express.json())
 app.use(cors())
+app.use(express.static('build'))
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :post_body'))
 morgan.token('post_body', req => req.method==='POST' ? JSON.stringify(req.body) : ' ' )
 
@@ -34,6 +35,7 @@ let persons =
   }
 ]
 
+//GET INFO
 app.get('/info', (req, res) => {
   res.send(`<h4>Phonebook has info for ${persons.length} people. </h4> 
   <h4>${(new Date).toTimeString()}</h4>`)
