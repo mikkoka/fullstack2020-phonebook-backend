@@ -1,0 +1,6 @@
+GET http://localhost:3001/api/persons/5c41c90e84d891c15dfa3431
+
+// tällä koodi 500: 5a3b7c3c31d61cb9f8a0343
+
+// Käyttö: cmnd + option + R
+

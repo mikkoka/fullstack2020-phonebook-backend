@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Ilmari{{$randomInt 100 9000}}",
+    "number":  "{{$randomInt 1000 20000}}"
+}
+
+
+// Käyttö: cmnd + option + R

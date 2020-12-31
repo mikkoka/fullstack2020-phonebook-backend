@@ -1,0 +1,7 @@
+GET http://localhost:3001/api/persons/5fe5d81e104961409d41f29b
+
+# {
+#   "name": "Matti",
+#   "number": "040-123456",
+#   "id": "5fe5d81e104961409d41f29b"
+# }
